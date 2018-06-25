@@ -13,7 +13,7 @@ kivymd==0.1.2
 lxml==4.1.1
 oauthlib==2.1.0
 packaging==16.8
-pypiwin32==220
+pypiwin32==221
 python-dateutil==2.6.1
 pytz==2017.3
 requests==2.14.2
