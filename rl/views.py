@@ -5,13 +5,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login
 from .models import *
 from .forms import *
-from requests_oauthlib import OAuth2Session
-from requests_oauthlib.compliance_fixes import linkedin_compliance_fix
 from django.contrib import messages
-from django.utils import timezone
-from django.core.mail import send_mail
-
-import imghdr,random,string,hashlib,json
 
 def sky(request):
     #Loc.objects.all().delete()
