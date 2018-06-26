@@ -1,1 +1,1 @@
-web: gunicorn startup4d/startup4d.wsgi $PORT
+web: gunicorn startup4d.wsgi:application --log-file -
