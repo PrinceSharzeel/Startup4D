@@ -1,1 +1,1 @@
-web: gunicorn startup4d.wsgi --log-file -
+web: gunicorn startup4d.wsgi
