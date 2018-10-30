@@ -12,6 +12,6 @@ geodjango-timezones==1.0
 packaging==16.8
 python-dateutil==2.6.1
 pytz==2017.3
-requests==2.14.2
+requests==2.20.0
 virtualenv==15.1.0
 
