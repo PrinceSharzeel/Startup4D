@@ -6,6 +6,8 @@ from django.contrib.auth import authenticate,login
 from .models import *
 from .forms import *
 from django.contrib import messages
+from django.contrib.auth.decorators import user_passes_test
+from django.contrib.auth import logout
 
 def sky(request):
     #Loc.objects.all().delete()
@@ -31,7 +33,7 @@ def sky(request):
             db_obj.link=link
             db_obj.status='false'
             db_obj.save()
-            print name,lon,link,dat
+            print(name,lon,link,dat)
             form = AddStartup()
             star = Loc.objects.filter(status='true')
             return HttpResponseRedirect('/sky')
@@ -138,8 +140,6 @@ def leave(request):
     request.session['logged'] = 'false'
     return HttpResponseRedirect('/unlog_serch')
 
-from django.contrib.auth.decorators import user_passes_test
-from django.contrib.auth import logout
 
 def logt(request):
     logout(request)
