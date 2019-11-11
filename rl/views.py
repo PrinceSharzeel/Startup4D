@@ -127,11 +127,6 @@ def login_contrib(request):
             return  HttpResponseRedirect('/signup_contrib')
 
 
-
-
-
-
-
 def leave(request):
     request.session['logged'] = 'false'
     return HttpResponseRedirect('/unlog_serch')
