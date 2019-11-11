@@ -46,10 +46,6 @@ def sky(request):
         return render(request, 'sky.html', {'form': form, 'stp': star,'for':forum})
 
 
-
-
-
-
 def serch(request, template_name='sky.html'):
 
     if request.method=='POST':
