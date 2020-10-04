@@ -4,9 +4,7 @@ from django.db import models
 
 import datetime
 
-year_dropdown = []
-for y in range(1900, (datetime.datetime.now().year)):
-    year_dropdown.append((y, y))
+year_dropdown = [ y for y in range(1900, (datetime.datetime.now().year))]
 
 class Loc(models.Model):
 	name = models.CharField(max_length=75, blank=False)
